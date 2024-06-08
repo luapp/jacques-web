@@ -1,0 +1,66 @@
+.card {
+    background-color: #333;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card_page {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9ae;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: 12em auto;
+    text-align: center;
+    color: #333;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.cardTitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 2em;
+    font-family: "nova";
+    text-decoration: underline;
+}
+
+.card_page:hover {
+    background-color: #a1a1a1;
+}
+
+.contactInfo {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: "nova";
+}
+
+.address {
+    margin-top: 20px;
+    font-style: italic;
+    font-family: "nova";
+}
+
+h2 {
+    user-select: none;
+}
+
+p {
+    user-select: none;
+}
+
+div {
+    user-select: none;
+}
+
+
+@font-face {
+    font-family: "nova";
+    src: url("./nova.otf") format("opentype");
+}

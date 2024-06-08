@@ -1,48 +1,96 @@
 .header {
+    width: 100vw;
+    background-color: #333;
+    color: white;
     display: grid;
-    grid-template-columns: 20% auto 20%;
-    grid-template-rows: 100%;
-    height: 100px;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 100px;
+}
+
+.header_title {
+    font-family: "nova";
+    font-size: 2.5em;
+    font-weight: 300;
 }
 
 .header_left {
     display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
+    align-items: left;
+    flex: 1;
+    padding-left: 5em;
 }
 
 .header_mid {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 2;
+    flex-wrap: wrap;
     flex-direction: row;
-}
-
-.header_mid_text {
-    user-select: none;
-    cursor: pointer;
-    padding-left: 0.4em;
-    padding-right: 0.4em;
-    margin-left: 0.6em;
-    margin-right: 0.6em;
-    color: white;
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
+    gap: 0.5em;
 }
 
 .header_right {
     display: flex;
     justify-content: right;
     align-items: center;
-    flex-direction: row;
+    flex: 1;
+    margin-right: 5em;
+    gap: 3em;
+
+}
+
+.yt {
+    height: 100%;
+}
+
+.yt_a {
+    height: 50px;
+    width: 75px;
+}
+
+.insta {
+    height: 100%;
+}
+
+.insta_a {
+    height: 50px;
+    width: 50px;
+}
+
+.header_mid_text {
+    user-select: none;
+    cursor: pointer;
+    padding: 0.4em 1.2em;
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header_p {
+    font-family: "nova";
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.header_mid_text:hover {
+    color: #ccc; /* Change color on hover */
+}
+
+@media (min-width: 768px) {
+
+    .header_mid_text {
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 1200px) {
+}
+
+
+@font-face {
+    font-family: "nova";
+    src: url("./nova.otf") format("opentype");
 }
